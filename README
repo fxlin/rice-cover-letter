@@ -1,0 +1,30 @@
+OVERVIEW
+--------
+A set of Latex files and shell scripts used to generate cover letters for Rice graduates.
+
+Original idea from:
+http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+
+Rice Logo from:
+http://ricebeamer.dynaman.net/
+
+License:
+http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+PREREQUISITE
+------------
+Linux or OSX, pdflatex
+
+USE
+------------
+Generate sample letter
+$./build.sh sample-univ
+
+Generate a letter for univ A
+# place a.tex (based on sample-univ.tex) under schools/
+$./build.sh a
+
+Generate a letter for univ A, B, C...
+# place a.tex, b.tex, and c.tex (based on sample-univ.tex) under schools/
+# modify SCHOOLS in build.sh
+$./build.sh
