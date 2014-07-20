@@ -46,14 +46,9 @@
 
 \lthUiuc % Print the company/institution logo
 
-%%%%%%%%%%%%%%%%%%%%%%%%
-%	User-defined Macros
-%%%%%%%%%%%%%%%%%%%%%%%%
-%%% conference name
+
 %\newcommand{\confname}[1]{\emph{#1}}
 \newcommand{\confname}[1]{#1}
-
-%%% research system name
 \newcommand{\sysname}[1]{\textsc{#1}}
 %\newcommand{\sysname}[1]{#1}
 
@@ -63,7 +58,8 @@
 \newcommand\noted[1]{\sethlcolor{lightgray} \hl{[#1]}}
 %\newcommand\noted[1]{}
 
-% used by external script to generate multiple output letters
+% use script to generate multiple outputs
+%\input schools/ubc.tex
 \input \jobname.tex
 
 %----------------------------------------------------------------------------------------
@@ -86,7 +82,7 @@ Houston, TX 77005
 %	ADDRESSEE AND GREETING/CLOSING
 %----------------------------------------------------------------------------------------
 
-\greetto{Dear Members of the Search Committee,}
+\greetto{Dear Hiring Manager,} % Greeting text
 
 \closeline{Sincerely,}
 
@@ -114,46 +110,29 @@ Houston, TX 77005
 % self intro
 % % % % % % % % % % % %
 I am writing to apply for 
-the advertised tenure-track faculty position \ifdefined\positionid\positionid{}\fi in your department.  
-I am currently a Ph.D. candidate in Computer Science at Rice University, working with \note{advisor}. I expect to complete my dissertation by \note{month, year}.
+the advertised position \ifdefined\positionid\positionid{}\fi in \univer{}.  
+I am currently a Ph.D. candidate in Computer Science at Rice University. 
+I expect to complete my dissertation by \note{month, year}.
 
 % % % % % % % % % % % %
-% past work
+% graduate work
 % % % % % % % % % % % %
-My research interests focus on \note{AAA}\ifdefined\afterinterest\afterinterest{}\fi;
-my background broadly spans the areas of \note{AAA, BBB, CCC}.
-My thesis work addresses \note{XXX, YYY, ZZZ}. The work have been published at the \confname{XYZ conf}.
+My interests are in XXXX...
 
 % % % % % % % % % % % %
-% future work
+% work exp
 % % % % % % % % % % % %
-Looking ahead,
-I will continue to investigate \note{AAA}.
-% generic collaboration description
-\ifdefined\genericcollaboration\genericcollaboration{}\fi
-
-% detailed collaboration description in a separate paragraph
-\collaboration{}
-
-% % % % % % % % % % % %
-% teaching
-% % % % % % % % % % % %
-I am confident of making a solid contribution to the teaching and curriculum of \univer{}.
+During my graduate study, I have worked at AAA, BBB, CCC...
 
 % % % % % % % % % % % %
 % closing
 % % % % % % % % % % % %
-My application materials, including curriculum vitae, research statement, and teaching statement are enclosed. All my application materials are available from: 
+My application materials are enclosed, which are also available from: 
 \begin{center}
 \texttt{http://example.org}
 \end{center}
 
 I look forward to hearing from you soon. Thank you. 
-
-%Sincerely, \\
-%\\
-%Felix Xiaozhu Lin
-%\includegraphics[scale=1]{signature-small.pdf}
 
 \end{newlfm}
 \end{document}

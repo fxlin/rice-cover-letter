@@ -1,7 +1,7 @@
-# arg1 - school names, e.g. "tamu asu utah"
+# arg1 - school names, e.g. "stanford berkeley mit"
 
 MAINFILE=letter.tex
-#SCHOOLS="a b c"
+#SCHOOLS="stanford berkeley mit"
 SCHOOLS=$1
 
 for S in $SCHOOLS

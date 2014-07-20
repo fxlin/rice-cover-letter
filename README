@@ -2,6 +2,9 @@ OVERVIEW
 --------
 A set of Latex files and shell scripts used to generate cover letters for Rice graduates.
 
+Allow you to use one .tex file to quickly generate multiple letters. 
+(with customization for each company/school)
+
 Original idea from:
 http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
 
@@ -11,9 +14,11 @@ http://ricebeamer.dynaman.net/
 License:
 http://creativecommons.org/licenses/by-nc-sa/3.0/
 
+
 PREREQUISITE
 ------------
 Linux or OSX, pdflatex
+
 
 USE
 ------------
@@ -28,3 +33,10 @@ Generate a letter for univ A, B, C...
 # place a.tex, b.tex, and c.tex (based on sample-univ.tex) under schools/
 # modify SCHOOLS in build.sh
 $./build.sh
+
+
+WRITING LETTER TO COMPANY?
+------------
+Replace letter.tex with letter-corp.tex
+Then try
+$./build.sh intel
