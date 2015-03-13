@@ -1,0 +1,1 @@
+Latex template of cover letter for Rice University job hunters
